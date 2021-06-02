@@ -6,7 +6,15 @@ import org.junit.jupiter.api.Test;
 import ar.edu.unlam.pb2.parcial1.Enumeradores.Estado;
 import ar.edu.unlam.pb2.parcial1.Enumeradores.Genero;
 import ar.edu.unlam.pb2.parcial1.Enumeradores.TipoDeConsola;
+import ar.edu.unlam.pb2.parcial1.dominio.Alquilable;
+import ar.edu.unlam.pb2.parcial1.dominio.Cliente;
+import ar.edu.unlam.pb2.parcial1.dominio.Comestible;
+import ar.edu.unlam.pb2.parcial1.dominio.Libro;
 import ar.edu.unlam.pb2.parcial1.dominio.Pelicula;
+import ar.edu.unlam.pb2.parcial1.dominio.Producto;
+import ar.edu.unlam.pb2.parcial1.dominio.Vendible;
+import ar.edu.unlam.pb2.parcial1.dominio.Videoclub;
+import ar.edu.unlam.pb2.parcial1.dominio.Videojuego;
 
 public class PrimerParcial2021 {
 
@@ -48,7 +56,7 @@ public class PrimerParcial2021 {
 		
 		// Validación
 		assertEquals(CODIGO_ESPERADO, juego.getCodigo());
-		assertEquals(DESCRIPCION_ESPERADA, juego.getCodigo());
+		assertEquals(DESCRIPCION_ESPERADA, juego.getDescripcion());
 		assertEquals(CONSOLA_ESPERADA, juego.getTipo());
 		
 	}
@@ -66,7 +74,7 @@ public class PrimerParcial2021 {
 		
 		// Validación
 		assertEquals(CODIGO_ESPERADO, libro.getCodigo());
-		assertEquals(DESCRIPCION_ESPERADA, libro.getCodigo());
+		assertEquals(DESCRIPCION_ESPERADA, libro.getDescripcion());
 		assertEquals(AUTOR_ESPERADO, libro.getAutor());
 		assertEquals(EDITORIAL_ESPERADA, libro.getEditorial());
 		
@@ -83,7 +91,7 @@ public class PrimerParcial2021 {
 		
 		// Validación
 		assertEquals(CODIGO_ESPERADO, comestible.getCodigo());
-		assertEquals(DESCRIPCION_ESPERADA, comestible.getCodigo());
+		assertEquals(DESCRIPCION_ESPERADA, comestible.getDescripcion());
 	}
 	
 	@Test

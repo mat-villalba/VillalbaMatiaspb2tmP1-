@@ -2,13 +2,14 @@ package ar.edu.unlam.pb2.parcial1.dominio;
 
 import ar.edu.unlam.pb2.parcial1.Enumeradores.Genero;
 
-public class Pelicula extends Producto{
+public class Pelicula extends Producto implements Vendible{
 	
 	private Genero genero;
 	private Integer anoDeEstreno;
 	private String director;
 	private Actor[] actores;
 	private Integer cantidadDeActores;
+	private Double precioDeVenta;
 	
 	public Pelicula(Integer codigo, String descripcion, Genero genero, Integer anoDeEstreno, String director) {
 		super(codigo, descripcion);
@@ -17,6 +18,7 @@ public class Pelicula extends Producto{
 		this.director=director;
 		this.cantidadDeActores=10;
 		this.actores= new Actor[cantidadDeActores];
+		this.precioDeVenta=0.00;
 	}
 
 	public Boolean agregarActor(String nombre) {
@@ -53,6 +55,16 @@ public class Pelicula extends Producto{
 			return true;
 		}
 		return false;
+	}
+
+	@Override
+	public void setPrecioVenta(Double pRECIO_VENTA) {
+		this.precioDeVenta=pRECIO_VENTA;
+	}
+
+	@Override
+	public Double getPrecioVenta() {
+		return precioDeVenta;
 	}
 	
 }
