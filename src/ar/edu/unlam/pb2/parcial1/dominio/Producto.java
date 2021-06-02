@@ -13,6 +13,7 @@ public class Producto {
 		this.codigo=codigo;
 		this.descripcion=descripcion;
 		this.estado= Estado.DISPONIBLE;
+		
 	}
 
 	public Integer getCodigo() {
@@ -29,6 +30,11 @@ public class Producto {
 
 	public void setEstado(Estado estado) {
 		this.estado = estado;
+	}
+
+	public Cliente getQuienPoseeElProducto() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
