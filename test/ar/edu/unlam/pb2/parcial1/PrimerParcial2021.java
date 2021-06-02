@@ -6,11 +6,12 @@ import org.junit.jupiter.api.Test;
 import ar.edu.unlam.pb2.parcial1.Enumeradores.Estado;
 import ar.edu.unlam.pb2.parcial1.Enumeradores.Genero;
 import ar.edu.unlam.pb2.parcial1.Enumeradores.TipoDeConsola;
+import ar.edu.unlam.pb2.parcial1.dominio.Pelicula;
 
-class PrimerParcial2021 {
+public class PrimerParcial2021 {
 
 	@Test
-	void queSePuedaCrearUnaPelicula() {
+	public void queSePuedaCrearUnaPelicula() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Exterminators II";
@@ -35,7 +36,8 @@ class PrimerParcial2021 {
 		
 	}
 	
-	void queSePuedaCrearUnVideojuego() {
+	@Test
+	public void queSePuedaCrearUnVideojuego() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Fornite";
@@ -51,7 +53,8 @@ class PrimerParcial2021 {
 		
 	}
 	
-	void queSePuedaCrearUnLibro() {
+	@Test
+	public void queSePuedaCrearUnLibro() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Fifty Shades of Grey";
@@ -69,7 +72,8 @@ class PrimerParcial2021 {
 		
 	}
 	
-	void queSePuedaCrearUnComestible() {
+	@Test
+	public void queSePuedaCrearUnComestible() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Chomps";
@@ -83,7 +87,7 @@ class PrimerParcial2021 {
 	}
 	
 	@Test
-	void queUnaPeliculaSeaVendible() {
+	public void queUnaPeliculaSeaVendible() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Exterminators II";
@@ -101,7 +105,7 @@ class PrimerParcial2021 {
 	}
 
 	@Test
-	void queUnJuegoSeaAlquilable() {
+	public void queUnJuegoSeaAlquilable() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Fornite";
@@ -118,7 +122,7 @@ class PrimerParcial2021 {
 	}
 
 	@Test
-	void queSePuedaCrearUnCliente() {
+	public void queSePuedaCrearUnCliente() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String NOMBRE_ESPERADO = "Camila";
@@ -137,7 +141,7 @@ class PrimerParcial2021 {
 	}
 
 	@Test
-	void queSePuedaVenderUnLibro() {
+	public void queSePuedaVenderUnLibro() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "Fifty Shades of Grey";
@@ -166,7 +170,7 @@ class PrimerParcial2021 {
 	}
 	
 	@Test
-	void queSePuedaAlquilarUnaPelicula() {
+	public void queSePuedaAlquilarUnaPelicula() {
 		// Preparación
 		final Integer CODIGO_ESPERADO = 1;
 		final String DESCRIPCION_ESPERADA = "El Cisne Negro";
@@ -197,7 +201,7 @@ class PrimerParcial2021 {
 	}
 	
 	@Test
-	void queSeNoSePuedaVenderUnComestibleVendido() {
+	public void queSeNoSePuedaVenderUnComestibleVendido() {
 		// Preparación
 		
 		// Ejecución
@@ -206,7 +210,7 @@ class PrimerParcial2021 {
 	}
 	
 	@Test
-	void queSeNoSePuedaAlquilarUnJuegoAlquilado() {
+	public void queSeNoSePuedaAlquilarUnJuegoAlquilado() {
 		// Preparación
 		
 		// Ejecución
@@ -215,7 +219,7 @@ class PrimerParcial2021 {
 	}
 	
 	@Test
-	void queLuegoDeDevueltaUnaPeliculaSePuedaAlquilar() {
+	public void queLuegoDeDevueltaUnaPeliculaSePuedaAlquilar() {
 		// Preparación
 		
 		// Ejecución
@@ -224,7 +228,7 @@ class PrimerParcial2021 {
 	}
 	
 	@Test
-	void queSeNoSePuedaAlquilarUnPeliculaAUnMenor() {
+	public void queSeNoSePuedaAlquilarUnPeliculaAUnMenor() {
 		// Preparación
 		
 		// Ejecución
